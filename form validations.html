@@ -1,0 +1,96 @@
+<!DOCKTYPE>
+<html>
+<head>
+<script>
+function validation ()
+{
+
+var  namee= document.form1.name.value;
+var  nameee= document.form1.name2.value;
+var emaill= document.form1.email1.value;
+var passwordd= document.form1.password1.value;
+var passworddd= document.form1.password1.value;
+
+var status=false;
+
+if ( namee=="")
+{
+document.getElementById("get").innerHTML=" <img src='http://hosthaha.com/images/unchecked.gif'/> please enter your name";
+status=false;
+}
+else
+{document.getElementById("get").innerHTML="<img src='http://www.euromuskeln.net/images/check.gif'/>";
+
+status=true;
+}
+if ( nameee=="")
+{
+document.getElementById("get2").innerHTML=" <img src='http://hosthaha.com/images/unchecked.gif'/> please enter your name";
+status=false;
+}
+else
+{
+document.getElementById("get2").innerHTML="<img src='http://www.euromuskeln.net/images/check.gif'/>";
+status=true;
+}
+if ( emaill=="")
+{
+document.getElementById("get3").innerHTML=" <img src='http://hosthaha.com/images/unchecked.gif'/> please enter your E-mail";
+status=false;
+}
+else
+{
+document.getElementById("get3").innerHTML="<img src='http://www.euromuskeln.net/images/check.gif'/>";
+status=true;
+}
+
+if (passwordd=="")
+{
+document.getElementById("get4").innerHTML=" <img src='http://hosthaha.com/images/unchecked.gif'/> please enter your Password";
+status=false;
+}
+
+
+else
+{
+document.getElementById("get4").innerHTML="<img src='http://www.euromuskeln.net/images/check.gif'/>";
+status=true;
+}
+if (password1.value.length < 4)
+{
+document.getElementById("get5").innerHTML=" <img src='http://hosthaha.com/images/unchecked.gif'/> please enter your Password";
+status=false;
+}
+
+
+else
+{
+document.getElementById("get5").innerHTML="<img src='http://www.euromuskeln.net/images/check.gif'/>";
+status=true;
+}
+
+
+
+
+
+
+
+
+
+
+return status;
+}
+
+</script>
+</head>
+<body>
+<h1 id="nine">Registration Form</h1>
+<form  name="form1" onsubmit="return validation()">
+First Name: <input type="name"  name="name" id="name" placeholder="type your first name"><span id="get" style="color:red;"></span></br>
+Last Name: <input type="name" placeholder="last Name" name="name2" id="name2"><span id="get2" style="color:red;"></span></br>
+email:<input type="email" name="email1" id="email1" placeholder="type your email address"><span id="get3" style="color:red;"></span></br>
+Password: <input type="password"  name="password1" id="password1" placeholder="type your password"><span id="get4" style="color:red;"></span><span id="get5" style="color:red;"></span></br>
+<input type="submit" value="login">
+</form>
+</body>
+</html>
